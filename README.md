@@ -1,9 +1,10 @@
-# 🔨 Formulário POO
+# 🔨 Hospital Manager
 # 📌 Sobre o projeto:
-1. Formulário usando programação orientada a objeto, utilizando js
+1. Um gerenciador de hospital, que controla pacientes e medicamentos, utilizando node.js
 2. Codigo 100% autoral
 3. Projeto feito focado em aprendizado
-4. Feito e responsivado com HTML5 e CSS3
+4. Feito e responsivado com Handlebars e Bootstrap
+
 # 📑 Quer testa-lo?
 
 - Clone o repositorio usando:
