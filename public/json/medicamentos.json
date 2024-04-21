@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "nome": "Medicamento base 100mg",
+    "quantidade": 100
+  },
+  {
+    "id": 2,
+    "nome": "Medicamento base 2 100mg",
+    "quantidade": 100
+  }
+]

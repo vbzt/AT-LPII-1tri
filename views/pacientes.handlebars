@@ -1,0 +1,24 @@
+{{#if pacientes}}
+    <div class="container">
+    <div class="pacientes-container">
+      {{#each pacientes}}
+      <div class="card paciente-card mb-5">
+        <div class="card-body p-4">
+          <h3 class="card-title">Paciente: {{this.nome}}</h2>
+          <h4 class="card-text">Idade: {{this.idade}}</h4>
+
+            <div class="btns">
+                <form action="/pacientes/delete" method="post">
+                    <input type="hidden" name = 'id' value="{{this.id}}">
+                    <button class ='btn btn-danger' type="submit">Deletar paciente</button>
+                </form>
+
+            </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <h3>Parece que ainda não temos pacientes registrados!</h3>
+{{/if}}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "nome": "Paciente Base",
+    "idade": 50,
+    "medicamentos": [
+      {
+        "remedio": "Medicamento base 50mg",
+        "quantidade": "10 comprimidos",
+        "tempo": "12 em 12 horas"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nome": "Paciente Base 2",
+    "idade": 50,
+    "medicamentos": [
+      {
+        "remedio": "Medicamento base 50mg",
+        "quantidade": "10 comprimidos",
+        "tempo": "12 em 12 horas"
+      }
+    ]
+  }
+]

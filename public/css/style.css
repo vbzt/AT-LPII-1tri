@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--colorido);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  background-color: var(--corFundo);
+}
+
+* {
+  border: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  font-style: normal;
+  font-family: "Rubik";
+  margin: 0;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  resize: none;
+  outline: none;
+  border: 0;
+  color: var(--corTexto);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --corTexto: #e4e4e4;
+  --corFundo: #111;
+  --colorido: #5e8ec5;
+  --corCinza: #333;
+  --corError: #c55e5e;
+}
+
+ 
+nav, footer{
+  height: 7%;
+  background-color: var(--corFundo);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 1.8cqh;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 1cqh;
+  padding: 0;
+}
+
+.nav-footer{
+  padding: 0;
+}
+
+main{
+  width: 100%;
+  min-height: 93%;
+  max-height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2cqh;
+  background-color: var(--corFundo);
+}
+
+
+.card{
+  width: 100%;
+  height: 30%;
+}
+
+.paciente-card, .paciente-card .card-title, .paciente-card ul li, .card-body, .card-body h4{
+  background-color: var(--corFundo);
+  color: var(--corTexto)
+}
+
+form .btn{
+  color: var(--corFundo);
+}
+
+nav h1{
+  font-size: 1.5rem;
+}
+
+.colored{
+  color: var(--colorido);
+}
+
+.btns{ 
+  display: flex;
+  gap: 10px;
+}
+
+form{
+  width: max-content;
+}
+
+.form-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+}
+
+.form-container form{
+  display: flex;
+  flex-direction: column;
+  gap: 2cqh;
+  width: 60%;
+}
+
+.form-container form .form-group input, .form-container form .form-group select, .form-container form .form-group select option{
+  background-color: var(--corFundo);
+  color: var(--corTexto);
+  border: 1px solid var(--corCinza);
+}
+
+.form-container form .form-group input:focus, .form-container form .form-group select:focus{
+  border: 1px solid var(--corTexto);
+  box-shadow: none;
+}
+
+.filterForm *{
+  background-color: #111;
+}
+
+.filterForm input{
+  width: 280px;
+}
+
+.error{
+  color: var(--corError);
+}

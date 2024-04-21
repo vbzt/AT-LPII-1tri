@@ -1,0 +1,33 @@
+<h1 class="text-center">Registrar Paciente</h1>
+{{#if erro}}
+<p class = 'error'>{{erro}}</p>
+{{/if}}
+<div class="container form-container">
+    <form action="/pacientes/add" method="post" class="form">
+
+
+      <div class="form-group">
+        <label for="title">Nome</label>
+        <input type="text" class="form-control" name="paciente" value="">
+      </div> 
+
+      <div class="form-group">
+        <label for="description">Idade</label>
+        <input type="number" class="form-control" name="idade" value="">
+      </div> 
+
+      <div class="form-group">
+        <label for="area">Quantidade de medicamentos</label>
+        <select class = 'form-control' name="qntMedicamentos" id="qntMedicamentos">
+          <option value="Quantidade de medicamentos" selected disabled>Quantidade de medicamentos</option>
+          {{#each medicamentos}}
+          <option value="{{this.id}}">{{add @key 1}}</option>
+          {{/each}}
+        </select>
+      </div> 
+
+      <button type="submit" class="btn w-100 btn-primary">Enviar</button>
+
+    </form>
+    <script src="/js/form.js"></script>
+  </div>

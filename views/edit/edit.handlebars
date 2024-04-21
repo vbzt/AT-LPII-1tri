@@ -1,0 +1,19 @@
+<h1 class="text-center">Editar medicamento</h1>
+<div class="container form-container">
+    <form action="/medicamentos/edit" method="post" class="form">
+      <input type="hidden" name="id" value = {{medicamento.id}}>
+
+      <div class="form-group">
+        <label for="title">Nome</label>
+        <input type="text" placeholder = 'Exemplo 00mg' class="form-control" value = "{{medicamento.nome}}" name="medicamento">
+      </div> 
+
+      <div class="form-group">
+        <label for="description">Quantiade de comprimidos</label>
+        <input type="number" class="form-control" value = "{{medicamento.quantidade}}" name="quantidade">
+      </div>
+
+      <button type="submit" class="btn w-100 btn-primary">Enviar</button>
+
+    </form>
+  </div>

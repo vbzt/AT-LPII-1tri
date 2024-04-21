@@ -1,0 +1,28 @@
+{{#if medicamentos}}
+    <div class="container">
+    <div class="medicamentos-container">
+      {{#each medicamentos}}
+      <div class="card paciente-card mb-5">
+        <div class="card-body p-4">
+          <h3 class="card-title">{{this.nome}}</h2>
+          <h4 class="card-text">Quantidade: {{this.quantidade}} comprimidos</h4>
+
+            <div class="btns">
+                <form action="/medicamentos/delete" method="post">
+                    <input type="hidden" name = 'id' value="{{this.id}}">
+                    <button class ='btn btn-danger' type="submit">Deletar medicamento</button>
+                </form>
+
+                <form action="/medicamentos/edit/{{this.id}}" method="post">
+                    <button class ='btn btn-info' type="submit">Editar medicamento</button>
+                </form>
+            </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+  </div>
+  {{else}}
+  <h3>Parece que ainda não temos medimentos registrados!</h3>
+  <a href="/">Registrar</a>
+{{/if}}
