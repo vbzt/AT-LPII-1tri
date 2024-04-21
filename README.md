@@ -7,15 +7,15 @@
 
 # 📑 Quer testa-lo?
 
-- Clone o repositorio usando:
+- Clone o repositorio usando: <br>
 <code> git clone https://github.com/vbzt/AT-LPII-1tri.git </code>
-- Depois de clonar, rode o comando
-<code> npm i </code> 
+- Depois de clonar, rode o comando <br>
+<code> npm i </code>  <br>
 Para instalar todas as dependencias
 
-- Depois rode
-<code> npm start </code>
-E abra o site em 
+- Depois rode  <br>
+<code> npm start </code>  <br>
+E abra o site em  <br>
 <code> http://localhost:3000/ </code>
 
 
